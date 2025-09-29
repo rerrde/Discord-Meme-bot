@@ -16,7 +16,7 @@ class Myclient(discord.Client):
       return
     
     if message.content.startswith('$hello'):
-      await message.channel.send('Hello niga')
+      await message.channel.send('Hello! ')
     
     if message.content.startswith('$meme'):
       await message.channel.send(get_meme())
@@ -26,3 +26,4 @@ intents = discord.Intents.default()
 intents.message_content = True
 client = Myclient(intents=intents)
 client.run('Your Discord Bot Token Here')
+
